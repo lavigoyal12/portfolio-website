@@ -7,6 +7,11 @@
   <meta name="description" content="Lavi Goyal — BSc Computer Science student interested in web development and AI.">
   <title>Lavi Goyal | Computer Science Student</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .hero-name{display:inline-flex;align-items:center;gap:clamp(10px,2vw,24px)}
+    .hero-portrait{width:clamp(80px,15vw,150px);aspect-ratio:1;object-fit:cover;object-position:50% 25%;border-radius:50%;border:3px solid #282826;vertical-align:middle}
+    @media(max-width:680px){.hero-portrait{width:clamp(64px,18vw,96px)}.hero-name{gap:10px}}
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -21,7 +26,7 @@
 
   <main>
     <section class="hero section" id="home">
-      <h1>Hello, I am<br>Lavi Goyal<span class="name-period">.</span></h1>
+      <h1>Hello, I am<br><span class="hero-name">Lavi Goyal<span class="name-period">.</span><img class="hero-portrait" src="portrait.png" alt="Portrait of Lavi Goyal"></span></h1>
       <p class="hero-copy">A first-year student at Scaler School of Technology, exploring AI and creative ways to solve problems.</p>
       <div class="hero-actions">
         <a class="button button-primary" href="#about">Get to know me <span aria-hidden="true">↓</span></a>
